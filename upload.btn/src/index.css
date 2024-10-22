@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #1c9ece;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,6 +20,7 @@ html, body, #root {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f9f9f9; /* Fond noir pour root */
 }
 
 a {
@@ -45,18 +46,25 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  z-index: 1;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  appearance: none;
+  display: inline-block;
+  background: linear-gradient(45deg, #ea28f3, #0ef); /* Le dégradé souhaité */
+  color: #f9f9f9; /* Couleur du texte visible */
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 50px;
+  top: 0px;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background: linear-gradient(45deg, #ea28f3, #ea28f3);
+}
+button:hover::after {
+  box-shadow: 0px 0px 23px 0px #ea28f3 inset, 0px 0px 8px 0px #FFFFFF42; /* Effet lumineux modifié */
 }
 button:focus,
 button:focus-visible {

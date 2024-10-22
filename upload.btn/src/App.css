@@ -32,7 +32,7 @@ button {
   margin: 20px auto;
   width: 300px;
   text-align: left;
-  background-color: #f9f9f9;
+  background-color: #1c9ece;
   position: relative;
 }
 
@@ -49,5 +49,5 @@ button {
 }
 
 button:hover {
-  background-color: #ddd;
+  background-color: #e51313;
 }
