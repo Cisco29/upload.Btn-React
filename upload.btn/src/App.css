@@ -1,42 +1,53 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;  /* Centre le contenu horizontalement */
+  align-items: center;      /* Centre le contenu verticalement */
+  min-height: 100vh;        /* Assure que l'App occupe toute la hauteur de l'écran */
+  flex-direction: column;   /* Aligne les éléments verticalement */
+  text-align: center;       /* Centre le texte */
+  width: 100%;              /* Prend toute la largeur de la page */
+  box-sizing: border-box;    /* Assure que le padding ne dépasse pas la largeur */
+  padding: 20px;            /* Ajoute du padding autour pour éviter que le contenu ne colle aux bords */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
 }
 
-.card {
-  padding: 2em;
+.upload-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  text-align: left;
+  background-color: #f9f9f9;
+  position: relative;
 }
 
-.read-the-docs {
-  color: #888;
+.progress-bar {
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 20px;
+}
+
+button:hover {
+  background-color: #ddd;
 }
