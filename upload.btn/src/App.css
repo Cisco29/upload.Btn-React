@@ -1,23 +1,21 @@
-
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
-  
 }
 
 .App {
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;  /* Centre le contenu horizontalement */
-  align-items: center;      /* Centre le contenu verticalement */
-  min-height: 100vh;        /* Assure que l'App occupe toute la hauteur de l'écran */
-  flex-direction: column;   /* Aligne les éléments verticalement */
-  text-align: center;       /* Centre le texte */
-  width: 100%;              /* Prend toute la largeur de la page */
-  box-sizing: border-box;    /* Assure que le padding ne dépasse pas la largeur */
-  padding: 20px;            /* Ajoute du padding autour pour éviter que le contenu ne colle aux bords */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  min-height: 100vh; /* Assure que l'App occupe toute la hauteur de l'écran */
+  flex-direction: column; /* Aligne les éléments verticalement */
+  text-align: center; /* Centre le texte */
+  width: 100%; /* Prend toute la largeur de la page */
+  box-sizing: border-box; /* Assure que le padding ne dépasse pas la largeur */
+  padding: 20px; /* Ajoute du padding autour pour éviter que le contenu ne colle aux bords */
 }
-
 
 button {
   padding: 10px 20px;
